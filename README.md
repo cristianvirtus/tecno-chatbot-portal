@@ -4,7 +4,8 @@ Mini-agente educativo de **tecnología** para un curso de entrenamiento. Cumple 
 
 Solo cubre temas de tecnología. El resto se rechaza y se redirige al tema.
 
-Demo local: `npm run dev` → [http://localhost:3000](http://localhost:3000)
+Demo en línea: [https://tecno-chatbot-portal.vercel.app](https://tecno-chatbot-portal.vercel.app)  
+En local: `npm run dev` → [http://localhost:3000](http://localhost:3000)
 
 ## Arquitectura
 
@@ -92,9 +93,9 @@ npm run build
 
 [Vercel](https://vercel.com) es el hosting de quien hace Next.js. Subes el repo, ellos **construyen** la app y te dan una URL `https://….vercel.app` que cualquiera puede abrir. Es el mismo código; no hace falta que tu laptop esté encendida.
 
-Pasos: Importar este repositorio en Vercel → pegar `ANTHROPIC_API_KEY` en Environment Variables → Deploy.
+Pasos (ya hecho en este repo): el proyecto está en Vercel con `ANTHROPIC_API_KEY`. URL: [https://tecno-chatbot-portal.vercel.app](https://tecno-chatbot-portal.vercel.app).
 
-La URL pública sirve como entregable del curso (junto con este GitHub). Cada push a `main` puede volver a desplegar solo.
+Para volver a publicar a mano: `npx vercel --prod`. Para que cada `git push` despliegue solo, hay que conectar GitHub en el dashboard de Vercel (Login Connection con GitHub).
 
 ## Qué es gratis y qué no
 
