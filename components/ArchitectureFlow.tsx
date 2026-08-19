@@ -44,19 +44,35 @@ const STATUS_LABEL: Record<StageStatus, string> = {
 };
 
 const STATUS_CARD: Record<StageStatus, string> = {
-  idle: "border-teal-800 bg-teal-900/35",
+  idle: "border-slate-700/70 bg-slate-800/30 opacity-70",
   active: "pipeline-active border-cyan-300 bg-cyan-300/15",
-  done: "border-emerald-400/50 bg-emerald-400/10",
+  done: "border-emerald-400/60 bg-emerald-400/15",
   empty: "border-amber-400/50 bg-amber-400/10",
-  skipped: "border-slate-600/50 bg-slate-800/40 opacity-55",
+  skipped: "border-slate-700/40 bg-slate-900/40 opacity-45",
 };
 
 const STATUS_DOT: Record<StageStatus, string> = {
-  idle: "bg-teal-700",
+  idle: "bg-slate-500",
   active: "pipeline-dot bg-cyan-300",
   done: "bg-emerald-400",
   empty: "bg-amber-400",
-  skipped: "bg-slate-500",
+  skipped: "bg-slate-600",
+};
+
+const STATUS_NAME: Record<StageStatus, string> = {
+  idle: "text-slate-400",
+  active: "text-cyan-50",
+  done: "text-emerald-50",
+  empty: "text-amber-50",
+  skipped: "text-slate-500",
+};
+
+const STATUS_DETAIL: Record<StageStatus, string> = {
+  idle: "text-slate-500",
+  active: "text-cyan-200/80",
+  done: "text-emerald-200/70",
+  empty: "text-amber-200/70",
+  skipped: "text-slate-600",
 };
 
 export function ArchitectureFlow({
@@ -122,12 +138,14 @@ export function ArchitectureFlow({
                     className={`h-1.5 w-1.5 shrink-0 rounded-full ${STATUS_DOT[status]}`}
                     aria-hidden
                   />
-                  <span className="text-[9px] text-teal-300/50">{index + 1}</span>
-                  <span className="truncate text-[11px] font-semibold text-teal-50">
+                  <span className={`text-[9px] ${STATUS_DETAIL[status]}`}>{index + 1}</span>
+                  <span
+                    className={`truncate text-[11px] font-semibold ${STATUS_NAME[status]}`}
+                  >
                     {stage.name}
                   </span>
                 </div>
-                <p className="truncate text-[9px] text-teal-200/60">{detail}</p>
+                <p className={`truncate text-[9px] ${STATUS_DETAIL[status]}`}>{detail}</p>
               </li>
             );
           })}
