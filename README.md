@@ -1,32 +1,57 @@
 # Tech Mentor (Nodi)
 
-Mini-agente de un curso de entrenamiento: **una sola tool** (`consultar_conocimiento_tech`) que busca en un corpus local de tecnología (RAG). Chat de texto, micrófono en el navegador, y un avatar animado que lee un resumen corto.
+Mini-agente educativo de **tecnología** para un curso de entrenamiento. Cumple el lab de **una sola tool**: Claude decide cuándo llamar `consultar_conocimiento_tech`; Node la ejecuta sobre un corpus Markdown local (RAG). El chat es por texto o voz, un avatar lee un resumen corto, y un panel muestra **cómo responde** cada petición.
 
-Solo responde temas de tecnología. El resto se rechaza con una redirección al tema.
+Solo cubre temas de tecnología. El resto se rechaza y se redirige al tema.
 
-## Qué demuestra
+Demo local: `npm run dev` → [http://localhost:3000](http://localhost:3000)
 
-- API key en el servidor (nunca en el cliente)
-- Prompt con rol, límites y formato de resumen para voz
-- Tool use con streaming: el modelo propone la función, Node la ejecuta y la respuesta final se transmite token a token
-- RAG sobre Markdown en `knowledge/`
-- UI responsive (sin login ni MCP: el lab pedía una tool)
+## Arquitectura
 
-## Funciones de la interfaz
+```
+Navegador (Next.js)
+  │  texto o Web Speech (STT, Chrome)
+  │  POST /api/chat  { messages }  →  stream NDJSON
+  ▼
+API route (servidor, Node)
+  │  ANTHROPIC_API_KEY (nunca llega al cliente)
+  │  Claude Haiku: system prompt + tools
+  │  loop de tool_use
+  ▼
+consultar_conocimiento_tech  (única tool)
+  │  búsqueda léxica en knowledge/*.md
+  ▼
+stream de la respuesta  →  Markdown + infografía + temas
+  │
+  ▼
+Web Speech TTS  →  avatar lee el resumen
+```
 
-- Avatar fijo en la barra superior: parpadea, mueve la boca al hablar y cambia de gesto al escuchar o pensar
-- Flujo de arquitectura en tiempo real: 10 nodos (entrada, API route, prompt, modelo, tool use, RAG, redacción, streaming, render y voz) que se iluminan conforme participan. En móvil se colapsa en una línea con la etapa activa
-- Infografías: cuando ayuda, la respuesta incluye una tarjeta de pasos, comparación o conceptos clave
-- Respuestas en streaming: el texto aparece mientras el modelo escribe (NDJSON sobre `fetch`)
-- Respuestas renderizadas como Markdown (listas, negritas, bloques de código)
-- **Temas relacionados**: 3–5 preguntas de seguimiento clicables que el modelo devuelve en la misma llamada
-- Botón de micrófono con dictado del navegador
-- Voz gratuita del sistema: prioriza voces españolas locales o “premium/enhanced” instaladas y ajusta ritmo y tono para sonar más natural
+No hay MCP ni un backend aparte. El lab pedía **una** función; el corpus vive en `knowledge/`.
+
+## Qué demuestra el curso
+
+| Tema | Cómo se ve en el proyecto |
+|------|---------------------------|
+| API key | Variable de entorno en el servidor (`.env.local` / Vercel). Nunca en el navegador. |
+| Prompt engineering | Rol, límites (solo tech), formato de resumen, temas e infografía. |
+| Tool use | Una tool. Claude propone; Node ejecuta. |
+| RAG | Retrieval sobre Markdown curado, no un dump enorme. |
+| Streaming | La respuesta aparece token a token (NDJSON). |
+
+## Interfaz
+
+- Avatar femenino ilustrado (fijo arriba): parpadea, gesticula y mueve la boca al hablar.
+- **Cómo responde Nodi**: 10 nodos que se iluminan (entrada, API route, prompt, modelo, tool, RAG, redacción, streaming, render, voz). En móvil el panel se colapsa.
+- Respuestas en Markdown (listas, código, negritas).
+- Infografías de pasos, comparación o conceptos cuando el tema lo amerita.
+- 3–5 **temas relacionados** clicables al final de cada respuesta.
+- Micrófono (Chrome) y TTS del sistema, sin costo extra.
 
 ## Requisitos
 
 - Node.js 20+
-- Una clave de [Anthropic / Claude](https://console.anthropic.com/settings/keys)
+- Clave de [Anthropic / Claude](https://console.anthropic.com/settings/keys)
 
 ## Cómo correrlo
 
@@ -44,26 +69,38 @@ npm test
 npm run build
 ```
 
-## Pruebas manuales sugeridas
+## Pruebas sugeridas
 
-1. «¿Qué es RAG?» → debe usar la tool (chip en la barra superior) y citar ideas del corpus.
-2. «Tengo 15 minutos, ¿qué practico de Git?» → ejercicio del material de estudio.
-3. «¿Cómo hago una receta de lasaña?» → rechazo educado, sin tool.
-4. Clic en un chip de «Temas relacionados» → se envía como pregunta del usuario.
-5. Botón de micrófono en **Chrome** → transcribe y envía.
-6. El avatar se mueve y habla el resumen (puede pedir un clic previo en algunos navegadores por política de autoplay).
+1. «¿Qué es RAG?» → usa la tool y cita el corpus.
+2. «Tengo 15 minutos, ¿qué practico de Git?» → ejercicio del material.
+3. «¿Qué es ITIL?» → llama la tool; RAG puede marcar *sin resultados* y Claude responde igual (sin fingir internet).
+4. «Dame una receta de lasaña» → rechazo, sin tool.
+5. Chip de temas relacionados → se envía como pregunta tuya.
+6. Micrófono en **Chrome** → transcribe y envía.
+7. El avatar habla el resumen (a veces el navegador pide un clic previo).
 
-## Deploy (Vercel)
+## Límites (a propósito)
 
-1. Sube el repo a GitHub.
-2. Importa el proyecto en Vercel.
-3. Variable de entorno `ANTHROPIC_API_KEY`.
-4. Deploy. La URL pública es un entregable válido del curso.
+- Corpus pequeño y curado.
+- **Dictado en Chrome.** Edge, Brave, Firefox y Arc suelen fallar (`network`) porque el reconocimiento es un servicio del fabricante, no de esta app. El texto siempre funciona.
+- Sin búsqueda web. El nodo de internet se eliminó para no simular una fuente que no existe.
+- Infografías dibujadas con datos estructurados del modelo, no imágenes de un servicio de pago.
+- Avatar ilustrado, no lip-sync fotoreal.
+- Sin login ni historial en servidor.
 
-## Límites
+## Publicar en Vercel (opcional)
 
-- El corpus es pequeño y curado a propósito (mejor retrieval que un dump enorme).
-- **Dictado solo en Chrome.** La Web Speech API delega la transcripción en un servicio del fabricante: Chrome usa el de Google, mientras que Edge, Brave, Firefox y Arc devuelven `network`. Habilitarlo ahí exigiría transcripción en el servidor con otro proveedor (Anthropic no la ofrece). La app lo explica en pantalla y el chat por texto siempre funciona.
-- No hay búsqueda web: cuando el RAG no encuentra nada, el nodo muestra «Sin resultados» y el modelo responde con conocimiento general, sin fingir una fuente.
-- Las infografías se dibujan con datos estructurados que devuelve el modelo (sin HTML ni SVG generado), no son imágenes de un servicio externo.
-- El avatar es ilustrado (no lip-sync fotoreal).
+[Vercel](https://vercel.com) es el hosting de quien hace Next.js. Subes el repo, ellos **construyen** la app y te dan una URL `https://….vercel.app` que cualquiera puede abrir. Es el mismo código; no hace falta que tu laptop esté encendida.
+
+Pasos: Importar este repositorio en Vercel → pegar `ANTHROPIC_API_KEY` en Environment Variables → Deploy.
+
+La URL pública sirve como entregable del curso (junto con este GitHub). Cada push a `main` puede volver a desplegar solo.
+
+## Qué es gratis y qué no
+
+| Pieza | Costo |
+|-------|--------|
+| Chat, avatar, infografías, flujo didáctico | Gratis (código) |
+| Voz entrada/salida | Gratis (Web Speech del navegador) |
+| Hosting en Vercel (hobby) | Gratis para una demo |
+| Claude (Haiku) | De pago por uso (centavos en una demostración) |
