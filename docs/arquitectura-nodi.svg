@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="2546" viewBox="0 0 1680 2546">
+<rect width="1680" height="2546" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8a99ad"/></marker><marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6d28d9"/></marker></defs>
+<rect x="0" y="0" width="1680" height="8" fill="#0f766e"/>
+<text x="60" y="78" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">Arquitectura de Nodi</text>
+<text x="60" y="112" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Mini-agente educativo de tecnología: una sola herramienta, RAG local y respuesta en streaming.</text>
+<rect x="60" y="132" width="151.6" height="30" rx="15" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="135.8" y="152" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="600" text-anchor="middle" opacity="1.0">Next.js App Router</text>
+<rect x="221.6" y="132" width="90.0" height="30" rx="15" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="266.6" y="152" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="600" text-anchor="middle" opacity="1.0">TypeScript</text>
+<rect x="321.6" y="132" width="136.2" height="30" rx="15" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="389.70000000000005" y="152" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="600" text-anchor="middle" opacity="1.0">Claude Haiku 4.5</text>
+<rect x="467.8" y="132" width="205.5" height="30" rx="15" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="570.55" y="152" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="600" text-anchor="middle" opacity="1.0">RAG léxico sobre Markdown</text>
+<rect x="683.3" y="132" width="136.2" height="30" rx="15" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="751.4" y="152" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="600" text-anchor="middle" opacity="1.0">Web Speech (voz)</text>
+<rect x="829.5" y="132" width="136.2" height="30" rx="15" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="897.6" y="152" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="600" text-anchor="middle" opacity="1.0">Deploy en Vercel</text>
+<rect x="1130" y="60" width="490" height="104" rx="12" fill="#fffbeb" stroke="#fcd34d" stroke-width="1" opacity="1.0"/>
+<text x="1152" y="88" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#b45309" font-weight="700" text-anchor="start" opacity="1.0">REQUISITO DEL LAB</text>
+<text x="1152" y="112" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">“Un mini-agente muy simple con UNA sola tool.”</text>
+<text x="1152" y="134" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Nodi cumple con una función ejecutable. No hay segunda</text>
+<text x="1152" y="152" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">herramienta, ni MCP, ni búsqueda en internet.</text>
+<text x="60" y="194" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">EL RECORRIDO DE UNA PREGUNTA — los mismos 10 nodos que se iluminan en la demo</text>
+<rect x="50" y="218" width="520" height="1258" rx="14" fill="#eff8fe" opacity="1.0"/>
+<rect x="50" y="218" width="520" height="1258" rx="14" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.35"/>
+<text x="70" y="250" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0369a1" font-weight="700" text-anchor="start" opacity="1.0">NAVEGADOR</text>
+<text x="70" y="272" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">El usuario y la UI. Aquí nunca hay claves.</text>
+<rect x="630" y="218" width="520" height="1258" rx="14" fill="#effcf9" opacity="1.0"/>
+<rect x="630" y="218" width="520" height="1258" rx="14" fill="none" stroke="#0f766e" stroke-width="1" opacity="0.35"/>
+<text x="650" y="250" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f766e" font-weight="700" text-anchor="start" opacity="1.0">SERVIDOR NEXT.JS (Vercel)</text>
+<text x="650" y="272" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Ejecuta la tool, guarda el secreto, emite el stream.</text>
+<rect x="1150" y="218" width="520" height="1258" rx="14" fill="#f6f3ff" opacity="1.0"/>
+<rect x="1150" y="218" width="520" height="1258" rx="14" fill="none" stroke="#6d28d9" stroke-width="1" opacity="0.35"/>
+<text x="1170" y="250" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#6d28d9" font-weight="700" text-anchor="start" opacity="1.0">ANTHROPIC · CLAUDE HAIKU 4.5</text>
+<text x="1170" y="272" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Razona y decide. No ejecuta código.</text>
+<rect x="60" y="296" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="60" y="296" width="5" height="96" rx="2.5" fill="#0369a1"/>
+<circle cx="94" cy="326" r="14" fill="#0369a1"/>
+<text x="94" y="331" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">1</text>
+<text x="118" y="331" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">Entrada</text>
+<text x="80" y="356" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">El usuario escribe, o el micrófono dicta con Web Speech.</text>
+<text x="80" y="377" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">components/ChatApp.tsx  ·  dictado fiable en Chrome</text>
+<rect x="640" y="414" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="640" y="414" width="5" height="96" rx="2.5" fill="#0f766e"/>
+<circle cx="674" cy="444" r="14" fill="#0f766e"/>
+<text x="674" y="449" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">2</text>
+<text x="698" y="449" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">API route</text>
+<text x="660" y="474" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">POST /api/chat valida el JSON y exige un turno de usuario.</text>
+<text x="660" y="495" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">app/api/chat/route.ts  ·  400 si el body falla, 503 sin API key</text>
+<rect x="640" y="532" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="640" y="532" width="5" height="96" rx="2.5" fill="#0f766e"/>
+<circle cx="674" cy="562" r="14" fill="#0f766e"/>
+<text x="674" y="567" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">3</text>
+<text x="698" y="567" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">Prompt</text>
+<text x="660" y="592" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">System prompt: rol, límite “solo tecnología” y formato de salida.</text>
+<text x="660" y="613" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">lib/agent.ts  ·  viajan los últimos 12 turnos de contexto</text>
+<rect x="1160" y="650" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="1160" y="650" width="5" height="96" rx="2.5" fill="#6d28d9"/>
+<circle cx="1194" cy="680" r="14" fill="#6d28d9"/>
+<text x="1194" y="685" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">4</text>
+<text x="1218" y="685" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">El modelo decide</text>
+<text x="1180" y="710" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Claude razona y elige: responder directo o pedir la herramienta.</text>
+<text x="1180" y="731" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">si es un saludo o no es tech, no llama la herramienta</text>
+<rect x="640" y="768" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="640" y="768" width="5" height="96" rx="2.5" fill="#0f766e"/>
+<circle cx="674" cy="798" r="14" fill="#0f766e"/>
+<text x="674" y="803" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">5</text>
+<text x="698" y="803" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">Tool use</text>
+<text x="660" y="828" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Llega stop_reason = tool_use y Node ejecuta la función.</text>
+<text x="660" y="849" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">lib/agent.ts  ·  Claude propone, el servidor ejecuta</text>
+<rect x="640" y="886" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="640" y="886" width="5" height="96" rx="2.5" fill="#0f766e"/>
+<circle cx="674" cy="916" r="14" fill="#0f766e"/>
+<text x="674" y="921" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">6</text>
+<text x="698" y="921" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">RAG local</text>
+<text x="660" y="946" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Parte el corpus en chunks, puntúa coincidencias y toma 4.</text>
+<text x="660" y="967" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">lib/rag.ts + lib/corpus.ts  ·  puede quedar sin resultados</text>
+<rect x="1160" y="1004" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="1160" y="1004" width="5" height="96" rx="2.5" fill="#6d28d9"/>
+<circle cx="1194" cy="1034" r="14" fill="#6d28d9"/>
+<text x="1194" y="1039" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">7</text>
+<text x="1218" y="1039" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">Redacción</text>
+<text x="1180" y="1064" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Segunda pasada al modelo con los fragmentos como tool_result.</text>
+<text x="1180" y="1085" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">máximo 4 vueltas de herramienta para no ciclar</text>
+<rect x="640" y="1122" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="640" y="1122" width="5" height="96" rx="2.5" fill="#0f766e"/>
+<circle cx="674" cy="1152" r="14" fill="#0f766e"/>
+<text x="674" y="1157" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">8</text>
+<text x="698" y="1157" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">Streaming</text>
+<text x="660" y="1182" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Sale token a token en NDJSON: status, tool_result, delta, done.</text>
+<text x="660" y="1203" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">route.ts  ·  Content-Type: application/x-ndjson</text>
+<rect x="60" y="1240" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="60" y="1240" width="5" height="96" rx="2.5" fill="#0369a1"/>
+<circle cx="94" cy="1270" r="14" fill="#0369a1"/>
+<text x="94" y="1275" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">9</text>
+<text x="118" y="1275" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">Render</text>
+<text x="80" y="1300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Separa respuesta, resumen hablable, 3–5 temas e infografía.</text>
+<text x="80" y="1321" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">lib/text.ts  ·  Markdown, chips de temas e infografía</text>
+<rect x="60" y="1358" width="500" height="96" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="60" y="1358" width="5" height="96" rx="2.5" fill="#0369a1"/>
+<circle cx="94" cy="1388" r="14" fill="#0369a1"/>
+<text x="94" y="1393" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" opacity="1.0">10</text>
+<text x="118" y="1393" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">Voz</text>
+<text x="80" y="1418" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Web Speech Synthesis lee el resumen y el avatar mueve la boca.</text>
+<text x="80" y="1439" font-family="SF Mono, Menlo, Consolas, monospace" font-size="11.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">components/Avatar.tsx  ·  voz del sistema, sin costo de API</text>
+<path d="M 560 344.0 H 600.0 V 462.0 H 640" stroke="#8a99ad" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+<path d="M 890.0 510 L 890.0 532" stroke="#8a99ad" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1140 580.0 H 1150.0 V 698.0 H 1160" stroke="#8a99ad" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1160 698.0 H 1150.0 V 816.0 H 1140" stroke="#8a99ad" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+<path d="M 890.0 864 L 890.0 886" stroke="#8a99ad" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1140 934.0 H 1150.0 V 1052.0 H 1160" stroke="#6d28d9" stroke-width="1.8" stroke-dasharray="7 4" fill="none" marker-end="url(#arrow-purple)"/>
+<text x="1160" y="992" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#6d28d9" font-weight="600" text-anchor="start" opacity="1.0">el tool_result vuelve al modelo</text>
+<path d="M 1160 1052.0 H 1150.0 V 1170.0 H 1140" stroke="#8a99ad" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+<path d="M 640 1170.0 H 600.0 V 1288.0 H 560" stroke="#8a99ad" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+<path d="M 310.0 1336 L 310.0 1358" stroke="#8a99ad" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+<text x="60" y="1498" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">Flecha continua: el paso siguiente.   Flecha punteada: el resultado del corpus regresa a Claude para redactar.</text>
+<text x="60" y="1536" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">CÓMO FUNCIONA POR DENTRO</text>
+<rect x="60" y="1550" width="504.0" height="300" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="60" y="1550" width="504.0" height="4" rx="2" fill="#0f766e" opacity="1.0"/>
+<rect x="60" y="1552" width="504.0" height="6" fill="#0f766e"/>
+<rect x="60" y="1550" width="504.0" height="300" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="78" y="1586" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0f766e" font-weight="700" text-anchor="start" opacity="1.0">LA ÚNICA HERRAMIENTA</text>
+<text x="78" y="1608" font-family="SF Mono, Menlo, Consolas, monospace" font-size="14" fill="#0f172a" font-weight="700" text-anchor="start" opacity="1.0">consultar_conocimiento_tech</text>
+<rect x="78" y="1630" width="468.0" height="108" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="92" y="1654" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">entrada:  { consulta: string }</text>
+<text x="92" y="1676" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">salida:   { fragmentos: [ { titulo,</text>
+<text x="92" y="1696" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">          contenido, fuente, score } ],</text>
+<text x="92" y="1716" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">          aviso } </text>
+<circle cx="82" cy="1757.5" r="2.5" fill="#0f766e"/>
+<text x="94" y="1762" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Claude no ejecuta código: solo propone el argumento de la llamada.</text>
+<circle cx="82" cy="1781.5" r="2.5" fill="#0f766e"/>
+<text x="94" y="1786" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">El servidor la corre y le devuelve el JSON al modelo.</text>
+<circle cx="82" cy="1805.5" r="2.5" fill="#0f766e"/>
+<text x="94" y="1810" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Toda pregunta tech factual la invoca, aunque el corpus quizá no cubra el</text>
+<text x="94" y="1830" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">tema: así se ve cuándo acierta el RAG.</text>
+<rect x="588.0" y="1550" width="504.0" height="300" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="588.0" y="1550" width="504.0" height="4" rx="2" fill="#0369a1" opacity="1.0"/>
+<rect x="588.0" y="1552" width="504.0" height="6" fill="#0369a1"/>
+<rect x="588.0" y="1550" width="504.0" height="300" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="606.0" y="1586" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0369a1" font-weight="700" text-anchor="start" opacity="1.0">RAG LÉXICO EN 4 PASOS</text>
+<circle cx="610.0" cy="1603.5" r="2.5" fill="#0369a1"/>
+<text x="622.0" y="1608" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Carga knowledge/*.md y los parte en chunks por encabezado.</text>
+<circle cx="610.0" cy="1627.5" r="2.5" fill="#0369a1"/>
+<text x="622.0" y="1632" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Tokeniza: minúsculas, sin acentos, palabras de más de 2 letras.</text>
+<circle cx="610.0" cy="1651.5" r="2.5" fill="#0369a1"/>
+<text x="622.0" y="1656" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Descarta stop words (que, como, para, explica…) para evitar falsos</text>
+<text x="622.0" y="1676" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">positivos.</text>
+<circle cx="610.0" cy="1695.5" r="2.5" fill="#0369a1"/>
+<text x="622.0" y="1700" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">score = coincidencias ÷ √(largo del chunk). Top 4 con score mayor a 0,</text>
+<text x="622.0" y="1720" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">recortados a 1200 caracteres.</text>
+<rect x="606.0" y="1794" width="468.0" height="42" rx="8" fill="#eff8fe" stroke="#bae1f7" stroke-width="1" opacity="1.0"/>
+<text x="620.0" y="1812" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#0369a1" font-weight="600" text-anchor="start" opacity="1.0">Sin embeddings ni base vectorial: es a propósito.</text>
+<text x="620.0" y="1829" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Simple de explicar y honesto al decir “no encontré”.</text>
+<rect x="1116.0" y="1550" width="504.0" height="300" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="1116.0" y="1550" width="504.0" height="4" rx="2" fill="#6d28d9" opacity="1.0"/>
+<rect x="1116.0" y="1552" width="504.0" height="6" fill="#6d28d9"/>
+<rect x="1116.0" y="1550" width="504.0" height="300" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="1134.0" y="1586" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#6d28d9" font-weight="700" text-anchor="start" opacity="1.0">EL CORPUS  ·  knowledge/</text>
+<text x="1134.0" y="1608" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">http-apis.md</text>
+<text x="1284.0" y="1608" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">peticiones, verbos, códigos</text>
+<text x="1134.0" y="1629.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">html-css.md</text>
+<text x="1284.0" y="1629.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">estructura y estilos</text>
+<text x="1134.0" y="1651.0" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">javascript.md</text>
+<text x="1284.0" y="1651.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">bases del lenguaje</text>
+<text x="1134.0" y="1672.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">git.md</text>
+<text x="1284.0" y="1672.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">control de versiones</text>
+<text x="1134.0" y="1694.0" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">bases-datos.md</text>
+<text x="1284.0" y="1694.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">modelado y SQL</text>
+<text x="1134.0" y="1715.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">json-datos.md</text>
+<text x="1284.0" y="1715.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">formatos de intercambio</text>
+<text x="1134.0" y="1737.0" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">seguridad.md</text>
+<text x="1284.0" y="1737.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">buenas prácticas</text>
+<text x="1134.0" y="1758.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">terminal-redes.md</text>
+<text x="1284.0" y="1758.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">shell y redes</text>
+<text x="1134.0" y="1780.0" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">llm-rag-mcp.md</text>
+<text x="1284.0" y="1780.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">temas del curso</text>
+<text x="1134.0" y="1801.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">estudio-tech.md</text>
+<text x="1284.0" y="1801.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">cómo aprender y ejercicios</text>
+<text x="1134.0" y="1833.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Material curado a mano, no un volcado de internet.</text>
+<rect x="60" y="1882" width="1032.0" height="268" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="60" y="1882" width="1032.0" height="4" rx="2" fill="#0f766e" opacity="1.0"/>
+<rect x="60" y="1884" width="1032.0" height="6" fill="#0f766e"/>
+<rect x="60" y="1882" width="1032.0" height="268" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="78" y="1918" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0f766e" font-weight="700" text-anchor="start" opacity="1.0">QUÉ VIAJA POR EL STREAM  ·  una línea JSON por evento</text>
+<text x="78" y="1936" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#8a99ad" font-weight="700" text-anchor="start" opacity="1.0">EVENTO</text>
+<text x="530" y="1936" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#8a99ad" font-weight="700" text-anchor="start" opacity="1.0">ORIGEN</text>
+<text x="700" y="1936" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#8a99ad" font-weight="700" text-anchor="start" opacity="1.0">QUÉ HACE LA INTERFAZ</text>
+<rect x="72" y="1937" width="1008.0" height="26" rx="6" fill="#f8fafc" opacity="1.0"/>
+<text x="78" y="1955" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="500" text-anchor="start" opacity="1.0">status: model | tool | generation</text>
+<text x="530" y="1955" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">lib/agent.ts</text>
+<text x="700" y="1955" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Ilumina el nodo que está trabajando ahora.</text>
+<text x="78" y="1983" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="500" text-anchor="start" opacity="1.0">tool_result { found, fragments }</text>
+<text x="530" y="1983" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">después del RAG</text>
+<text x="700" y="1983" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Verde si hubo fragmentos; ámbar si vino vacío.</text>
+<rect x="72" y="1993" width="1008.0" height="26" rx="6" fill="#f8fafc" opacity="1.0"/>
+<text x="78" y="2011" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="500" text-anchor="start" opacity="1.0">reset</text>
+<text x="530" y="2011" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">si hubo texto antes</text>
+<text x="700" y="2011" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Borra el borrador para no mezclar respuestas.</text>
+<text x="78" y="2039" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="500" text-anchor="start" opacity="1.0">delta { text }</text>
+<text x="530" y="2039" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">tokens del modelo</text>
+<text x="700" y="2039" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Pinta Markdown en vivo, ya sin los marcadores.</text>
+<rect x="72" y="2049" width="1008.0" height="26" rx="6" fill="#f8fafc" opacity="1.0"/>
+<text x="78" y="2067" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="500" text-anchor="start" opacity="1.0">done { reply, summary, suggestions,</text>
+<text x="530" y="2067" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">parseReply</text>
+<text x="700" y="2067" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Mensaje final, chips de temas, infografía y voz.</text>
+<text x="78" y="2095" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="500" text-anchor="start" opacity="1.0">       infographic, usedTool }</text>
+<text x="530" y="2095" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0"></text>
+<text x="700" y="2095" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0"></text>
+<rect x="72" y="2105" width="1008.0" height="26" rx="6" fill="#f8fafc" opacity="1.0"/>
+<text x="78" y="2123" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="500" text-anchor="start" opacity="1.0">error { message }</text>
+<text x="530" y="2123" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">route o agent</text>
+<text x="700" y="2123" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Muestra el fallo; nunca inventa una respuesta.</text>
+<rect x="1116.0" y="1882" width="504.0" height="268" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="1116.0" y="1882" width="504.0" height="4" rx="2" fill="#b45309" opacity="1.0"/>
+<rect x="1116.0" y="1884" width="504.0" height="6" fill="#b45309"/>
+<rect x="1116.0" y="1882" width="504.0" height="268" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="1134.0" y="1918" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#b45309" font-weight="700" text-anchor="start" opacity="1.0">DÓNDE VIVE EL SECRETO</text>
+<rect x="1134.0" y="1934" width="468.0" height="92" rx="8" fill="#fffbeb" stroke="#fcd34d" stroke-width="1" opacity="1.0"/>
+<text x="1148.0" y="1958" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" fill="#b45309" font-weight="700" text-anchor="start" opacity="1.0">ANTHROPIC_API_KEY</text>
+<text x="1148.0" y="1980" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">.env.local en tu máquina y variable</text>
+<text x="1148.0" y="1998" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">de entorno en Vercel. Solo servidor.</text>
+<circle cx="1138.0" cy="2045.5" r="2.5" fill="#b45309"/>
+<text x="1150.0" y="2050" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">El navegador solo conoce la ruta /api/chat; jamás ve la clave.</text>
+<circle cx="1138.0" cy="2069.5" r="2.5" fill="#b45309"/>
+<text x="1150.0" y="2074" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Nada de prefijo NEXT_PUBLIC_ para el secreto.</text>
+<circle cx="1138.0" cy="2093.5" r="2.5" fill="#b45309"/>
+<text x="1150.0" y="2098" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">.env.local está en .gitignore.</text>
+<circle cx="1138.0" cy="2117.5" r="2.5" fill="#b45309"/>
+<text x="1150.0" y="2122" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Sin clave, la API responde 503 con un mensaje claro.</text>
+<rect x="60" y="2182" width="504.0" height="250" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="60" y="2182" width="504.0" height="4" rx="2" fill="#6d28d9" opacity="1.0"/>
+<rect x="60" y="2184" width="504.0" height="6" fill="#6d28d9"/>
+<rect x="60" y="2182" width="504.0" height="250" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="78" y="2218" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#6d28d9" font-weight="700" text-anchor="start" opacity="1.0">DECISIONES Y DESCARTES</text>
+<circle cx="82" cy="2235.5" r="2.5" fill="#6d28d9"/>
+<text x="94" y="2240" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Segunda tool que busque en internet: rompe la regla de una sola</text>
+<text x="94" y="2260" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">herramienta.</text>
+<circle cx="82" cy="2279.5" r="2.5" fill="#6d28d9"/>
+<text x="94" y="2284" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Embeddings o base vectorial: costo y complejidad que el lab no pide.</text>
+<circle cx="82" cy="2303.5" r="2.5" fill="#6d28d9"/>
+<text x="94" y="2308" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">MCP: se vio en el curso, pero no es este entregable.</text>
+<circle cx="82" cy="2327.5" r="2.5" fill="#6d28d9"/>
+<text x="94" y="2332" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Backend aparte: Next.js ya es el servidor.</text>
+<circle cx="82" cy="2351.5" r="2.5" fill="#6d28d9"/>
+<text x="94" y="2356" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">Haiku en lugar de Sonnet: la demo bajó de ~27 s a ~5 s por respuesta.</text>
+<rect x="588.0" y="2182" width="504.0" height="250" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="588.0" y="2182" width="504.0" height="4" rx="2" fill="#0369a1" opacity="1.0"/>
+<rect x="588.0" y="2184" width="504.0" height="6" fill="#0369a1"/>
+<rect x="588.0" y="2182" width="504.0" height="250" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="606.0" y="2218" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0369a1" font-weight="700" text-anchor="start" opacity="1.0">LOS COLORES DEL PANEL EN VIVO</text>
+<circle cx="614.0" cy="2235" r="7" fill="#94a3b8"/>
+<text x="632.0" y="2240" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">En espera</text>
+<text x="748.0" y="2240" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">el paso aún no ocurre</text>
+<circle cx="614.0" cy="2265" r="7" fill="#22d3ee"/>
+<text x="632.0" y="2270" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">Procesando</text>
+<text x="748.0" y="2270" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">está corriendo ahora</text>
+<circle cx="614.0" cy="2295" r="7" fill="#34d399"/>
+<text x="632.0" y="2300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">Completado</text>
+<text x="748.0" y="2300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">terminó bien</text>
+<circle cx="614.0" cy="2325" r="7" fill="#fbbf24"/>
+<text x="632.0" y="2330" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">Sin resultados</text>
+<text x="748.0" y="2330" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">RAG no encontró nada</text>
+<circle cx="614.0" cy="2355" r="7" fill="#64748b"/>
+<text x="632.0" y="2360" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">No utilizado</text>
+<text x="748.0" y="2360" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">el modelo no lo necesitó</text>
+<text x="606.0" y="2402" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">El panel enseña el contrato en tiempo real: se ve</text>
+<text x="606.0" y="2420" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" font-weight="400" text-anchor="start" opacity="1.0">cuándo Claude pidió la tool y cuándo se la saltó.</text>
+<rect x="1116.0" y="2182" width="504.0" height="250" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<rect x="1116.0" y="2182" width="504.0" height="4" rx="2" fill="#0f766e" opacity="1.0"/>
+<rect x="1116.0" y="2184" width="504.0" height="6" fill="#0f766e"/>
+<rect x="1116.0" y="2182" width="504.0" height="250" rx="12" fill="none" stroke="#cbd5e1" stroke-width="1" opacity="1.0"/>
+<text x="1134.0" y="2218" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0f766e" font-weight="700" text-anchor="start" opacity="1.0">ARCHIVOS PARA ABRIR EN CLASE</text>
+<text x="1134.0" y="2240" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">components/ChatApp.tsx</text>
+<text x="1134.0" y="2257" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">UI, micrófono, consumo del stream</text>
+<text x="1134.0" y="2280" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">components/ArchitectureFlow.tsx</text>
+<text x="1134.0" y="2297" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">los 10 nodos didácticos</text>
+<text x="1134.0" y="2320" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">app/api/chat/route.ts</text>
+<text x="1134.0" y="2337" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">puerta HTTP y NDJSON</text>
+<text x="1134.0" y="2360" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">lib/agent.ts</text>
+<text x="1134.0" y="2377" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">prompt, tool y ciclo con Claude</text>
+<text x="1134.0" y="2400" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">lib/rag.ts · lib/corpus.ts</text>
+<text x="1134.0" y="2417" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">la función ejecutable</text>
+<text x="1134.0" y="2440" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">lib/text.ts</text>
+<text x="1134.0" y="2457" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">score léxico y parseo de bloques</text>
+<text x="1134.0" y="2480" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" fill="#0f172a" font-weight="600" text-anchor="start" opacity="1.0">lib/text.test.ts</text>
+<text x="1134.0" y="2497" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#8a99ad" font-weight="400" text-anchor="start" opacity="1.0">pruebas con node:test</text>
+<rect x="60" y="2462" width="1560" height="84" rx="12" fill="#0f172a" opacity="1.0"/>
+<text x="86" y="2496" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#ffffff" font-weight="700" text-anchor="start" opacity="1.0">Una función, un corpus, un stream.</text>
+<text x="86" y="2522" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#cbd5e1" font-weight="400" text-anchor="start" opacity="1.0">El navegador no piensa: envía mensajes. Claude no ejecuta la herramienta: la pide. El servidor la corre y guarda el secreto.</text>
+<text x="1594" y="2496" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="end" opacity="1.0">github.com/cristianvirtus/tecno-chatbot-portal</text>
+<text x="1594" y="2522" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" fill="#5eead4" font-weight="600" text-anchor="end" opacity="1.0">tecno-chatbot-portal.vercel.app</text>
+</svg>

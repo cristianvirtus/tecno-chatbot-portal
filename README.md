@@ -9,6 +9,17 @@ En local: `npm run dev` → [http://localhost:3000](http://localhost:3000)
 
 ## Arquitectura
 
+No hay MCP ni un backend aparte. El lab pedía **una** función; el corpus vive en `knowledge/`.
+
+Infografías para clase (también en [docs/](docs/)):
+
+| Pieza | Para qué | Archivo |
+|-------|----------|---------|
+| Flujo de punta a punta | Presentar: nodos, stack y GitHub → Vercel | [flujo-nodi.png](docs/flujo-nodi.png) |
+| Arquitectura detallada | Explicar cada paso, eventos NDJSON y RAG | [arquitectura-nodi.png](docs/arquitectura-nodi.png) |
+
+![Flujo de Nodi: entrega y ciclo de una pregunta](docs/flujo-nodi.png)
+
 ```
 Navegador (Next.js)
   │  texto o Web Speech (STT, Chrome)
@@ -28,8 +39,6 @@ stream de la respuesta  →  Markdown + infografía + temas
 Web Speech TTS  →  avatar lee el resumen
 ```
 
-No hay MCP ni un backend aparte. El lab pedía **una** función; el corpus vive en `knowledge/`.
-
 ## Qué demuestra el curso
 
 | Tema | Cómo se ve en el proyecto |
@@ -39,6 +48,7 @@ No hay MCP ni un backend aparte. El lab pedía **una** función; el corpus vive 
 | Tool use | Una tool. Claude propone; Node ejecuta. |
 | RAG | Retrieval sobre Markdown curado, no un dump enorme. |
 | Streaming | La respuesta aparece token a token (NDJSON). |
+| DevOps | GitHub + Vercel: cada push a `main` despliega. |
 
 ## Interfaz
 
@@ -95,7 +105,7 @@ npm run build
 
 Pasos (ya hecho en este repo): el proyecto está en Vercel con `ANTHROPIC_API_KEY`. URL: [https://tecno-chatbot-portal.vercel.app](https://tecno-chatbot-portal.vercel.app).
 
-Para volver a publicar a mano: `npx vercel --prod`. Para que cada `git push` despliegue solo, hay que conectar GitHub en el dashboard de Vercel (Login Connection con GitHub).
+GitHub ([cristianvirtus/tecno-chatbot-portal](https://github.com/cristianvirtus/tecno-chatbot-portal)) está conectado a Vercel: un `git push` a `main` dispara el build y publica. Para volver a publicar a mano: `npx vercel --prod`.
 
 ## Qué es gratis y qué no
 
