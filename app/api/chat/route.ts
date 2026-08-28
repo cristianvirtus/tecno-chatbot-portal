@@ -1,20 +1,8 @@
 import { NextResponse } from "next/server";
-import { streamMentor, type ChatTurn } from "@/lib/agent";
+import { streamMentor } from "@/lib/agent";
+import { validateChatBody } from "@/lib/chat-request";
 
 export const runtime = "nodejs";
-
-function isTurn(value: unknown): value is ChatTurn {
-  if (!value || typeof value !== "object") {
-    return false;
-  }
-  const turn = value as ChatTurn;
-  return (
-    (turn.role === "user" || turn.role === "assistant") &&
-    typeof turn.content === "string" &&
-    turn.content.trim().length > 0 &&
-    turn.content.length < 8000
-  );
-}
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -24,15 +12,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
   }
 
-  const messages = (body as { messages?: unknown }).messages;
-  if (!Array.isArray(messages) || messages.length === 0 || !messages.every(isTurn)) {
-    return NextResponse.json({ error: "messages inválido" }, { status: 400 });
+  const parsed = validateChatBody(body);
+  if (!parsed.ok) {
+    return NextResponse.json({ error: parsed.error }, { status: parsed.status });
   }
-
-  const last = messages[messages.length - 1];
-  if (last.role !== "user") {
-    return NextResponse.json({ error: "El último mensaje debe ser del usuario" }, { status: 400 });
-  }
+  const { messages } = parsed;
 
   if (!process.env.ANTHROPIC_API_KEY) {
     return NextResponse.json(

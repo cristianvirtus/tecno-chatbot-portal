@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { cosineSimilarity, lexicalScore, parseReply, tokenize } from "./text.ts";
+import { cosineSimilarity, lexicalScore, parseReply, tokenize } from "./text";
 
 test("cosine de vectores iguales es 1", () => {
   assert.equal(cosineSimilarity([1, 0, 0], [1, 0, 0]), 1);

@@ -48,7 +48,7 @@ Web Speech TTS  →  avatar lee el resumen
 | Tool use | Una tool. Claude propone; Node ejecuta. |
 | RAG | Retrieval sobre Markdown curado, no un dump enorme. |
 | Streaming | La respuesta aparece token a token (NDJSON). |
-| DevOps | GitHub + Vercel: cada push a `main` despliega. |
+| DevOps | GitHub Actions (test, lint, build) + Vercel: cada push a `main` verifica y despliega. |
 
 ## Interfaz
 
@@ -105,7 +105,11 @@ npm run build
 
 Pasos (ya hecho en este repo): el proyecto está en Vercel con `ANTHROPIC_API_KEY`. URL: [https://tecno-chatbot-portal.vercel.app](https://tecno-chatbot-portal.vercel.app).
 
-GitHub ([cristianvirtus/tecno-chatbot-portal](https://github.com/cristianvirtus/tecno-chatbot-portal)) está conectado a Vercel: un `git push` a `main` dispara el build y publica. Para volver a publicar a mano: `npx vercel --prod`.
+GitHub ([cristianvirtus/tecno-chatbot-portal](https://github.com/cristianvirtus/tecno-chatbot-portal)) está conectado a Vercel: un `git push` a `main` dispara el build y publica. El mismo push corre [GitHub Actions](https://github.com/cristianvirtus/tecno-chatbot-portal/actions): tests, `tsc`, lint y `next build`.
+
+Guion del showcase: [docs/proyecto-final/guion-showcase.md](docs/proyecto-final/guion-showcase.md).
+
+Para volver a publicar a mano: `npx vercel --prod`.
 
 ## Qué es gratis y qué no
 
