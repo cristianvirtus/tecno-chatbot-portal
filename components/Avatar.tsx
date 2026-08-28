@@ -85,7 +85,7 @@ export function Avatar({ speaking, listening, thinking, compact = false }: Avata
         : "Mentor de tecnología";
 
   return (
-    <div className={compact ? "flex items-center gap-3" : "flex flex-col items-center gap-3"}>
+    <div className={compact ? "flex items-center gap-3" : "flex flex-col items-center gap-3"} data-testid="avatar">
       <div
         className={`relative shrink-0 ${
           compact ? "h-16 w-16 sm:h-20 sm:w-20" : "h-44 w-44 sm:h-52 sm:w-52"

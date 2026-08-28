@@ -77,8 +77,12 @@ Abre [http://localhost:3000](http://localhost:3000).
 
 ```bash
 npm test
+npm run test:e2e
 npm run build
 ```
+
+- `npm test` — unitarias e integración (RAG, parseo, validación de `/api/chat`).
+- `npm run test:e2e` — Playwright: recorrido de visitante + pregunta + chip (sin simular voz). Ver [adaptación de los labs](docs/proyecto-final/adaptacion-labs-testing.md).
 
 ## Pruebas sugeridas
 

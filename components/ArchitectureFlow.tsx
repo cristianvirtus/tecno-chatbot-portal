@@ -102,6 +102,7 @@ export function ArchitectureFlow({
     <section
       className="border-t border-teal-800/60 bg-teal-950/95"
       aria-label="Flujo de arquitectura de la petición"
+      data-testid="architecture-flow"
     >
       <div className="mx-auto w-full max-w-5xl px-4 py-2 sm:px-6">
         <button
@@ -130,6 +131,8 @@ export function ArchitectureFlow({
             return (
               <li
                 key={stage.id}
+                data-testid={`pipeline-stage-${stage.id}`}
+                data-status={status}
                 className={`min-w-0 rounded-xl border px-2.5 py-1.5 ${STATUS_CARD[status]}`}
                 title={`${stage.name}: ${STATUS_LABEL[status]} · ${detail}`}
               >

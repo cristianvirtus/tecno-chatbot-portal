@@ -7,7 +7,7 @@ on:
 
 jobs:
   verify:
-    name: test · lint · build
+    name: test · lint · build · e2e
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,4 +21,9 @@ jobs:
       - run: npm run lint
       - run: npm run build
         env:
+          NEXT_TELEMETRY_DISABLED: "1"
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+        env:
+          CI: "true"
           NEXT_TELEMETRY_DISABLED: "1"

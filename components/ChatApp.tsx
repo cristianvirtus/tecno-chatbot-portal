@@ -418,7 +418,7 @@ export function ChatApp() {
   const showSuggestions = suggestions.length > 0 && !busy;
 
   return (
-    <div className="flex h-dvh flex-col overflow-hidden bg-slate-100">
+    <div className="flex h-dvh flex-col overflow-hidden bg-slate-100" data-testid="chat-app">
       <header className="shrink-0 border-b border-teal-900/50 bg-teal-950 shadow-lg">
         <div className="mx-auto flex w-full max-w-5xl items-center gap-3 px-4 py-3 sm:gap-4 sm:px-6">
           <Avatar
@@ -436,7 +436,10 @@ export function ChatApp() {
             </p>
           </div>
           {usedTool ? (
-            <span className="hidden shrink-0 rounded-full bg-cyan-400/15 px-3 py-1 text-xs text-cyan-200 md:inline">
+            <span
+              data-testid="used-tool-badge"
+              className="hidden shrink-0 rounded-full bg-cyan-400/15 px-3 py-1 text-xs text-cyan-200 md:inline"
+            >
               Usó la tool de conocimiento
             </span>
           ) : null}
@@ -449,10 +452,11 @@ export function ChatApp() {
       </header>
 
       <main className="mx-auto flex w-full max-w-5xl min-h-0 flex-1 flex-col px-3 sm:px-6">
-        <div ref={listRef} className="min-h-0 flex-1 space-y-3 overflow-y-auto py-4">
+        <div ref={listRef} data-testid="message-list" className="min-h-0 flex-1 space-y-3 overflow-y-auto py-4">
           {messages.map((message) => (
             <article
               key={message.id}
+              data-testid={`message-${message.role}`}
               className={`max-w-[92%] rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[80%] sm:text-base ${
                 message.role === "user"
                   ? "ml-auto whitespace-pre-wrap bg-teal-700 text-white"
@@ -484,7 +488,10 @@ export function ChatApp() {
           ) : null}
 
           {showSuggestions ? (
-            <section className="rounded-2xl border border-dashed border-teal-300 bg-teal-50/70 px-4 py-3">
+            <section
+              className="rounded-2xl border border-dashed border-teal-300 bg-teal-50/70 px-4 py-3"
+              data-testid="related-topics"
+            >
               <h2 className="mb-2 text-xs font-semibold tracking-wide text-teal-800 uppercase">
                 Temas relacionados
               </h2>
@@ -493,6 +500,7 @@ export function ChatApp() {
                   <button
                     key={topic}
                     type="button"
+                    data-testid="topic-chip"
                     onClick={() => void send(topic)}
                     className="rounded-full border border-teal-300 bg-white px-3 py-1.5 text-left text-sm text-teal-900 transition-colors hover:border-teal-500 hover:bg-teal-100"
                   >
@@ -510,7 +518,7 @@ export function ChatApp() {
           </p>
         ) : null}
 
-        <form onSubmit={onSubmit} className="flex gap-2 border-t border-slate-200 py-3">
+        <form onSubmit={onSubmit} className="flex gap-2 border-t border-slate-200 py-3" data-testid="composer">
           <label className="sr-only" htmlFor="prompt">
             Mensaje
           </label>
@@ -537,12 +545,14 @@ export function ChatApp() {
             } disabled:opacity-50`}
             aria-pressed={listening}
             aria-label={listening ? "Detener micrófono" : "Grabar audio"}
+            data-testid="mic-button"
             title={listening ? "Detener" : "Hablar"}
           >
             <MicIcon />
           </button>
           <button
             type="submit"
+            data-testid="send-button"
             disabled={busy || !input.trim()}
             className="rounded-2xl bg-teal-700 px-4 text-sm font-medium text-white disabled:opacity-50"
           >
