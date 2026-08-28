@@ -89,10 +89,11 @@ function Steps({ items }: { items: Items }) {
           <li key={`${item.title}-${index}`} className="relative flex min-w-0 flex-col items-center px-1.5">
             {index < items.length - 1 ? (
               <span
-                className="absolute top-6 left-[calc(50%+24px)] h-0.5 w-[calc(100%-48px)] bg-teal-300"
+                className="absolute top-6 left-[calc(50%+32px)] flex h-0.5 w-[calc(100%-68px)] items-center"
                 aria-hidden
               >
-                <span className="absolute -right-0.5 -top-[3px] h-2 w-2 rotate-45 border-t-2 border-r-2 border-teal-400" />
+                <span className="h-0.5 min-w-0 flex-1 bg-teal-300" />
+                <span className="-ml-px h-2 w-2 shrink-0 rotate-45 border-t-2 border-r-2 border-teal-400" />
               </span>
             ) : null}
             <span className="z-10 flex h-12 w-12 items-center justify-center rounded-2xl border-4 border-white bg-teal-700 text-white shadow-sm">
