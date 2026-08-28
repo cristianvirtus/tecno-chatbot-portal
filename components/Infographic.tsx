@@ -64,7 +64,10 @@ function Steps({ items }: { items: Items }) {
                 <VisualIcon name={iconFor(item)} />
               </span>
               {index < items.length - 1 ? (
-                <span className="my-1 w-0.5 flex-1 bg-gradient-to-b from-teal-400 to-cyan-200" aria-hidden />
+                <span className="mt-1 flex min-h-4 flex-1 flex-col items-center" aria-hidden>
+                  <span className="w-0.5 min-h-0 flex-1 bg-teal-300" />
+                  <span className="-mt-px h-2 w-2 shrink-0 rotate-45 border-r-2 border-b-2 border-teal-400" />
+                </span>
               ) : null}
             </div>
             <div className="min-w-0 flex-1 rounded-2xl border border-teal-100 bg-white/90 px-3.5 py-3">
