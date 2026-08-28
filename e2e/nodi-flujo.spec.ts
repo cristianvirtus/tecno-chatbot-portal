@@ -25,7 +25,17 @@ async function mockChat(page: Page, reply: string, usedTool: boolean) {
           "¿Cómo escribo un buen commit?",
           "Explícame git push",
         ],
-        infographic: null,
+        infographic: usedTool
+          ? {
+              kind: "pasos",
+              title: "Flujo de una consulta",
+              items: [
+                { title: "Navegador", text: "Envía la pregunta a la API" },
+                { title: "RAG local", text: "Busca fragmentos en el corpus" },
+                { title: "Respuesta", text: "Devuelve la explicación al usuario" },
+              ],
+            }
+          : null,
         usedTool,
       },
     ]);
@@ -56,6 +66,8 @@ test("recorrido de Nodi de punta a punta", async ({ page }) => {
     await page.getByTestId("send-button").click();
     await expect(page.getByTestId("message-user")).toContainText("¿Qué es Git?");
     await expect(page.getByTestId("message-assistant").last()).toContainText("instantáneas");
+    await expect(page.getByTestId("infographic")).toContainText("Flujo de una consulta");
+    await expect(page.getByTestId("infographic")).toContainText("PASO 1");
     await expect(page.getByTestId("used-tool-badge")).toBeVisible();
     await expect(page.getByTestId("pipeline-stage-tool")).toHaveAttribute("data-status", "done");
     await expect(page.getByTestId("pipeline-stage-retrieval")).toHaveAttribute(
